@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 ::-webkit-scrollbar{
@@ -33,6 +34,11 @@ nav{
 
 .app-container nav div a{
   padding-left: 1rem;
+  text-decoration: none;
+}
+
+.app-container nav li a{
+  text-decoration: none;
 }
 
 .app-container nav ul{
@@ -82,6 +88,7 @@ header button{
   background-color: transparent;
   border: none;
   font-weight: 900;
+  animation: movingArrow 2s infinite;
 }
 
 /* AW23 SECTION */
@@ -155,6 +162,7 @@ header button{
   border: none;
   font-weight: 900;
   margin-top: -5rem;
+  animation: movingArrow 2s infinite;
 }
 
 /* CONTENT */
@@ -224,6 +232,7 @@ header button{
   background-color: transparent;
   border: none;
   font-weight: 900;
+  animation: movingArrow 2s infinite;
 }
 
 /* FORMS */
@@ -306,10 +315,75 @@ header button{
   color: #111;
 }
 
-.forms h4{
-  font-size: 24px;
-  text-align: end;
-  margin: 44% 1rem;
-  color: #fff;
+/* FOOTER */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #111;
+  height: 200px;
+}
+
+footer div{
+  flex: 8;
+  display: flex;
+  align-self: center;
+}
+
+footer div div{
+  width: 300px;
+}
+
+footer div div img{
+  width: 100%;
+}
+
+footer ul{
+  flex: 2;
+  width: 100%;
+  display: flex;
+  color: white;
   text-shadow: 1px 1px 1px #111;
+  padding-inline-start: 0;
+}
+
+footer ul li{
+  list-style: none;
+  align-self: center;
+  padding: 1rem;
+}
+
+footer ul li:first-of-type{
+  width: 300px;
+}
+
+footer ul li h4{
+  font-size: 14px;
+}
+
+footer ul li i{
+  font-size: 24px;
+}
+
+footer ul li h3{
+  font-size: 22px;
+}
+
+footer ul li:last-of-type{
+  width: 100%;
+  text-align: end;
+}
+
+@keyframes movingArrow {
+  0%{
+    opacity: 0;
+    transform: translate(0, -20px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
 }

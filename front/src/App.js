@@ -8,26 +8,28 @@ import lb2 from "./assets/img/lookbook2.png";
 import lb3 from "./assets/img/lookbook3.png";
 import lb4 from "./assets/img/lookbook4.png";
 import lb5 from "./assets/img/lookbook5.png";
+import rainbowLogo from "./assets/img/golfrainbowlogo.png";
 import pattern from "./assets/img/pattern.png";
 import simplecover from "./assets/img/simplecover.png";
 import golfcat from "./assets/img/golfcat.png";
 
 //ICONS
-import notification from "./assets/icons/notification.png";
 
 function App() {
   return (
     <div className="app-container">
       <nav>
         <div>
-          <a>GOLF</a>
+          <a href="#">GOLF</a>
         </div>
         <ul>
           <li>
-            <a>AW23</a>
+            <a href="#1">AW23</a>
           </li>
           <li>
-            <a></a>
+            <a href="#">
+              <i className="fa-solid fa-bell"></i>
+            </a>
           </li>
         </ul>
       </nav>
@@ -97,8 +99,35 @@ function App() {
           </select>
           <button>SUBSCRIBE</button>
         </form>
-        <h4>Golf Wang ™</h4>
       </section>
+      <footer>
+        <div>
+          <div>
+            <img src={rainbowLogo} />
+          </div>
+        </div>
+        <ul>
+          <li>
+            <h4>by Thiago Sosa Argañaraz</h4>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/thiago-sosa-arganaraz"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/thiaguetas" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <h3>Golf Wang ™</h3>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }
