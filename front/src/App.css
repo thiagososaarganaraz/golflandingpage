@@ -12,7 +12,11 @@
 .app-container{
   display: flex;
   flex-direction: column;
-    background-image: url("./assets/img/pattern.png");
+  background-image: url("./assets/img/pattern.png");
+}
+
+.app-container button{
+  z-index: 99;
 }
 
 nav{
@@ -385,5 +389,73 @@ footer ul li:last-of-type{
   100%{
     opacity: 0;
     transform: translate(0, 20px);
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 414px) {
+  nav{
+    width: 414px;
+  }
+
+  .app-container nav div, .app-container nav ul{
+    flex: 5;
+  }
+
+  header div{
+    width: 414px;
+  }
+
+  header div img{
+    width: 100%;
+  }
+
+  .aw23 div div:first-of-type{
+    display: none;
+  }
+
+  .aw23 div div:nth-of-type(5) h1{
+    font-size: 120px;
+    margin: auto 3rem;
+    color: #000000ee;
+  }
+
+  .content-image-container img{
+    height: 100%;
+  }
+
+  .content div div{
+    width: 40%;
+  }
+
+  .content-text-wrapper{
+    position: absolute;
+    top: 175%;
+    right: 25%;
+  }
+  
+  .content-text-wrapper h1{
+    font-size: 120px;
+    color: #000000ee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+
+  .forms form{
+    width: 90%;
+    right: 5%;
+  }
+
+  .forms div{
+    width: 90%;
+  }
+
+  .forms div:first-of-type{
+    right: 9%;
+  }
+
+  .forms div:nth-of-type(2){
+    right: 7%;
   }
 }
