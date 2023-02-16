@@ -210,9 +210,7 @@ header button{
 }
 
 .content-text-wrapper{
-  position: absolute;
-  top: 220%;
-  right: 45%;
+  margin: -560px auto;
   z-index: 3;
 }
 
@@ -325,7 +323,7 @@ footer{
   display: flex;
   flex-direction: column;
   background-color: #111;
-  height: 200px;
+  height: auto;
 }
 
 footer div{
@@ -336,6 +334,7 @@ footer div{
 
 footer div div{
   width: 300px;
+  margin: 1rem;
 }
 
 footer div div img{
@@ -399,12 +398,20 @@ footer ul li:last-of-type{
     width: 414px;
   }
 
-  .app-container nav div, .app-container nav ul{
-    flex: 5;
+  header{
+    height: 100vb;
+  }
+
+  .app-container nav div{
+    flex: 6;
+  }
+
+  .app-container nav ul{
+    flex: 4;
   }
 
   header div{
-    width: 414px;
+    width: 100%;
   }
 
   header div img{
@@ -430,9 +437,7 @@ footer ul li:last-of-type{
   }
 
   .content-text-wrapper{
-    position: absolute;
-    top: 175%;
-    right: 25%;
+
   }
   
   .content-text-wrapper h1{
@@ -457,5 +462,27 @@ footer ul li:last-of-type{
 
   .forms div:nth-of-type(2){
     right: 7%;
+  }
+
+  footer{
+    height: auto;
+  }
+
+  footer div div{
+    margin: .5rem;
+  }
+
+  footer ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer ul li{
+    text-align: center;
+    padding: .5rem;
+  }
+
+  footer ul h3{
+    text-align: center;
   }
 }

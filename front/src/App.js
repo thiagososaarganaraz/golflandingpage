@@ -79,9 +79,6 @@ function App() {
           <h1>WA</h1>
           <h1>NG</h1>
         </div>
-        <button onClick={() => document.getElementById("3").scrollIntoView()}>
-          ↓
-        </button>
       </section>
       <section id="3" className="forms">
         <div></div>
@@ -115,12 +112,12 @@ function App() {
               href="https://linkedin.com/in/thiago-sosa-arganaraz"
               target="_blank"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
           <li>
             <a href="https://github.com/thiaguetas" target="_blank">
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
           </li>
           <li>
